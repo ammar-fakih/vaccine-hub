@@ -13,13 +13,13 @@ class BadRequestError extends ExpressError {
 }
 
 class UnauthorizedError extends ExpressError {
-  constructor(message = 'Bad Request') {
+  constructor(message = 'Unauthorized') {
     super(message, 401);
   }
 }
 
 class ForbiddenError extends ExpressError {
-  constructor(message = 'Bad Request') {
+  constructor(message = 'Forbidden') {
     super(message, 403);
   }
 }
